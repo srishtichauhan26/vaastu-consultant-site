@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0f766e">
+  <meta name="description" content="Vaastu consultant services: home and office planning, site selection, remedies, and personalized vastu reports.">
+  <meta name="keywords" content="Vastu, Vaastu, Vastu Shastra, Vastu consultant, home vastu, office vastu, vastu remedies, vastu tips">
+  <title>Shubh Vaastu — Holistic Space Design</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛕</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+  <script defer src="assets/app.js"></script>
+</head>
+<body id="top">
+<header class="site-header">
+  <div class="container row between center">
+    <a class="brand row center" href="index.html">
+      <span class="brand-mark">🛕</span>
+      <span class="brand-text">Shubh Vaastu</span>
+    </a>
+    <nav class="nav">
+      <button class="nav-toggle" aria-label="Toggle navigation" onclick="toggleNav()">☰</button>
+      <ul id="navMenu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="portfolio.html">Case Studies</a></li>
+        <li><a href="blog.html">Guides</a></li>
+        <li><a class="cta" href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">🌓</button>
+  </div>
+</header>
+<section class="page-hero slim">
+  <div class="container">
+    <h1>Book a Consultation</h1>
+    <p>Tell us about your space. We’ll reply within 24 hours.</p>
+  </div>
+</section>
+
+<section class="container grid-2">
+  <form class="card form" id="contactForm" onsubmit="return handleSubmit(event)">
+    <label>Full name
+      <input type="text" name="name" placeholder="Your name" required>
+    </label>
+    <label>Email
+      <input type="email" name="email" placeholder="you@example.com" required>
+    </label>
+    <label>Phone (WhatsApp preferred)
+      <input type="tel" name="phone" placeholder="+91…" required>
+    </label>
+    <label>Property Type
+      <select name="type" required>
+        <option value="">Choose…</option>
+        <option>Apartment</option>
+        <option>Independent Home</option>
+        <option>Office</option>
+        <option>Retail</option>
+        <option>Other</option>
+      </select>
+    </label>
+    <label>City
+      <input type="text" name="city" placeholder="Bengaluru, Mumbai, Delhi…" required>
+    </label>
+    <label>Message / Intent
+      <textarea name="message" rows="5" placeholder="What would you like to improve? Sleep, sales, relationships, harmony…"></textarea>
+    </label>
+    <div class="row between center">
+      <label class="row center gap">
+        <input type="checkbox" required> I agree to the privacy policy
+      </label>
+      <button class="btn" type="submit">Submit</button>
+    </div>
+    <p id="formStatus" class="status" role="status" aria-live="polite"></p>
+  </form>
+
+  <aside class="card">
+    <h3>Prefer WhatsApp?</h3>
+    <p>Send your floor plan & entrance direction. We'll share a quick audit and next steps.</p>
+    <ul class="contact-list">
+      <li>📞 +91-98XX-XXX-XXX</li>
+      <li>✉️ hello@shubhvaastu.com</li>
+      <li>🕒 10:00 – 18:00 IST (Mon–Sat)</li>
+    </ul>
+    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1600&auto=format&fit=crop" alt="Sunlit entryway">
+  </aside>
+</section>
+
+<footer class="site-footer">
+  <div class="container grid-3">
+    <div>
+      <h4>Shubh Vaastu</h4>
+      <p>Holistic Vastu Shastra for modern homes & workplaces. Align energies, elevate outcomes.</p>
+      <p class="tiny">© <span id="year"></span> Shubh Vaastu. All rights reserved.</p>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <ul class="link-list">
+        <li><a href="services.html">Consulting Plans</a></li>
+        <li><a href="portfolio.html">Client Stories</a></li>
+        <li><a href="blog.html">Vastu Tips</a></li>
+        <li><a href="contact.html">Book a Call</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Get in touch</h4>
+      <ul class="contact-list">
+        <li>📞 +91-98XX-XXX-XXX</li>
+        <li>✉️ hello@shubhvaastu.com</li>
+        <li>📍 Bengaluru • Mumbai • Delhi (Remote India-wide)</li>
+      </ul>
+      <div class="socials">
+        <a href="#" aria-label="Instagram">📸</a>
+        <a href="#" aria-label="YouTube">▶️</a>
+        <a href="#" aria-label="WhatsApp">💬</a>
+      </div>
+    </div>
+  </div>
+</footer>
+<a href="#top" class="back-to-top" id="backToTop" aria-label="Back to top">↑</a>
+</body>
+</html>
